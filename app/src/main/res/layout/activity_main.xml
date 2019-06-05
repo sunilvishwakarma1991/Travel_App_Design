@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+      android:id="@+id/viewPager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+
+  <LinearLayout
+    android:id="@+id/info"
+android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+
+    android:gravity="center"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+      android:id="@+id/SliderDots"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="20dp"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+
+      android:layout_height="wrap_content"
+      android:orientation="horizontal" >
+
+      <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_margin="3dp"
+        android:src="@drawable/date" />
+
+      <TextView
+       android:text="21 September,2019"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d3d3d3"
+        android:layout_margin="3dp"
+        android:layout_gravity="center_vertical" />
+
+      <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:src="@drawable/ic_watch_later_black_24dp" />
+
+      <TextView
+        android:text="2:00 PM"
+        android:layout_margin="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#d3d3d3"
+        android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+    <TextView
+      android:text="Oktoberfest in Munich,"
+      android:textStyle="bold"
+      android:textColor="@android:color/white"
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+    <TextView
+      android:text="Germany"
+      android:textStyle="bold"
+      android:textColor="@android:color/white"
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+
+    <TextView
+      android:text="Oktoberfest 2019 is going to be the best yet and you know how we know that? Because Oktoberfest in Munich, Germany, is the kind of thing that gets better with age – like whiskey, fine wine, or the leather of your lederhosen."
+
+      android:ellipsize="end"
+      android:maxLines="3"
+      android:layout_marginTop="30dp"
+      android:textColor="#d3d3d3"
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <RatingBar
+      android:id="@+id/rating"
+      android:layout_width="wrap_content"
+      android:progressTint="@color/yellow"
+      android:layout_height="wrap_content"
+      style="@style/Widget.AppCompat.RatingBar.Small"
+      android:secondaryProgressTint="@android:color/white"
+      android:numStars="5"
+      android:rating="3.0"
+      android:stepSize="0.5"
+
+      android:isIndicator="true" />
+    <TextView
+      android:text="3.0 (777)"
+      android:ellipsize="end"
+      android:maxLines="3"
+      android:layout_marginLeft="10dp"
+      android:textColor="#d3d3d3"
+      android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  </LinearLayout>
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_marginTop="10dp" android:gravity="center"
+      android:layout_marginBottom="20dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" >
+      <ImageView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+       android:src="@drawable/ic_expand_less_black_24dp" />
+      <TextView
+        android:text="Swipe Up"
+
+        android:maxLines="1"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+  </LinearLayout>
+  </RelativeLayout>
+
